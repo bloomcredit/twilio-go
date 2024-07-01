@@ -56,10 +56,15 @@ func (c *ApiService) CreateMessageFeedback(MessageSid string, params *CreateMess
 	if params != nil && params.Outcome != nil {
 		data.Set("Outcome", *params.Outcome)
 	}
+	fmt.Printf("c.baseURL: %v\n", c.baseURL)
+	fmt.Printf("path: %v\n", path)
+	fmt.Printf("data: %v\n", data)
+	fmt.Printf("headers: %v\n", headers)
 
 	resp, err := c.requestHandler.Post(c.baseURL+path, data, headers)
 	if err != nil {
-		return nil, err
+
+		return nil, fmt.Errorf("all the errors? : %s\n%s\n%x\n%d", c.baseURL, path, data, err)
 	}
 	fmt.Printf("resp: %+v\n", resp)
 
