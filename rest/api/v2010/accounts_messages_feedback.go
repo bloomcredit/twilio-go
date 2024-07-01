@@ -16,6 +16,7 @@ package openapi
 
 import (
 	"encoding/json"
+	"fmt"
 	"net/url"
 	"strings"
 )
@@ -60,6 +61,7 @@ func (c *ApiService) CreateMessageFeedback(MessageSid string, params *CreateMess
 	if err != nil {
 		return nil, err
 	}
+	fmt.Printf("resp: %+v\n", resp)
 
 	defer resp.Body.Close()
 
