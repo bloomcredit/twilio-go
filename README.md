@@ -1,3 +1,11 @@
+> **Archived (2026-09-22).** Bloom Credit no longer uses this repository.
+>
+> Last non-maintenance commit: 2025-02-20. Recheck found no contribution after 2025-09-22. Platform archived it ([sc-32678](https://app.shortcut.com/bloom-credit/story/32678)).
+>
+> Do not add new work here. If you still need this code, unarchive the repository and comment on sc-32678.
+
+---
+
 # twilio-go
 
 [![Tests](https://github.com/twilio/twilio-go/actions/workflows/test-and-deploy.yml/badge.svg)](https://github.com/twilio/twilio-go/actions/workflows/test-and-deploy.yml)
